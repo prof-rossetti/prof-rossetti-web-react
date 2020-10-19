@@ -38,16 +38,14 @@ export default function App() {
 
     // LINKS
 
-
     return (
         <Router>
-            <div>
-                <Navbar fixed="top" bg="light">
-                    <Navbar.Brand href="/">Michael J Rossetti</Navbar.Brand>
-
-                    <Navbar.Toggle aria-controls="navbar-collapse" />
-                    <Navbar.Collapse id="navbar-collapse">
-                        <Nav className="ml-auto">
+            <div className="app">
+                <Navbar fixed="top" bg="light" expand="lg">
+                    <Navbar.Brand href="#home">Michael J Rossetti</Navbar.Brand>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Collapse id="basic-navbar-nav">
+                        <Nav className="mr-auto">
                             <Nav.Link href="/research">Research</Nav.Link>
                             <Nav.Link href="/teaching">Teaching</Nav.Link>
                             <Nav.Link href="/experience">Experience</Nav.Link>
