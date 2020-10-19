@@ -43,6 +43,8 @@ export default function App() {
             <div className="app">
                 <Navbar fixed="top" bg="light" expand="lg">
                     <Navbar.Brand href="/">Michael J Rossetti</Navbar.Brand>
+                    {/*
+
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mr-auto">
@@ -51,15 +53,30 @@ export default function App() {
                             <Nav.Link href="/press">Press</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
+
+                    */}
                 </Navbar>
 
                 <Container fluid className="page">
                     <Switch>
                         <Route path="/" exact component={Home} />
+                        {/*
+
                         <Route path="/research" component={Research} />
                         <Route path="/teaching" component={Teaching} />
                         <Route path="/press" component={Press} />
-                    </Switch>
+
+                        */}
+                     </Switch>
+
+                    <hr/>
+                    <footer>
+                        <p style={{textAlign:"center"}}>
+                            {" "}<a href="https://www.linkedin.com/in/mikerossetti/">LinkedIn</a> |
+                            {" "}<a href="https://github.com/prof-rossetti">GitHub</a> |
+                            {" "}<a href="mailto:prof.mj.rossetti@gmail.com">Email</a>
+                        </p>
+                    </footer>
                 </Container>
             </div>
         </Router>
