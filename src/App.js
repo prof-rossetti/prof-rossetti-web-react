@@ -17,7 +17,7 @@ import './App.css'
 import Home from './Home'
 import Research from './Research'
 import Teaching from './Teaching'
-//import Experience from './Experience'
+import Press from './Press'
 
 //ReactGA.initialize(process.env.REACT_APP_GA_TRACKER_ID, {debug: true})
 
@@ -48,6 +48,7 @@ export default function App() {
                         <Nav className="mr-auto">
                             <Nav.Link href="/research">Research</Nav.Link>
                             <Nav.Link href="/teaching">Teaching</Nav.Link>
+                            <Nav.Link href="/press">Press</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
@@ -57,6 +58,7 @@ export default function App() {
                         <Route path="/" exact component={Home} />
                         <Route path="/research" component={Research} />
                         <Route path="/teaching" component={Teaching} />
+                        <Route path="/press" component={Press} />
                     </Switch>
                 </Container>
             </div>
