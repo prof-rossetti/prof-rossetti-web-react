@@ -40,3 +40,9 @@ npm install
 ```sh
 npm start
 ```
+
+# Deploying
+
+```sh
+git push heroku master
+```
