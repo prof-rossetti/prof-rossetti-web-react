@@ -1,8 +1,7 @@
 
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom'  // NavLink
-//import ReactGA from 'react-ga'
-//import {groupBy, values} from "lodash"
+import ReactGA from 'react-ga'
 
 import Navbar from 'react-bootstrap/Navbar'
 //import Nav from 'react-bootstrap/Nav'
@@ -19,10 +18,10 @@ import Home from './Home'
 //import Teaching from './Teaching'
 //import Press from './Press'
 
-//ReactGA.initialize(process.env.REACT_APP_GA_TRACKER_ID, {debug: true})
+ReactGA.initialize(process.env.REACT_APP_GA_TRACKING_ID, {debug: true})
 
 export default function App() {
-    //ReactGA.pageview(window.location.href)
+    ReactGA.pageview(window.location.href)
 
     // ROUTES
 
@@ -72,9 +71,9 @@ export default function App() {
                     <hr/>
                     <footer>
                         <p style={{textAlign:"center"}}>
-                            {" "}<a href="https://www.linkedin.com/in/mikerossetti/">LinkedIn</a> |
-                            {" "}<a href="https://github.com/prof-rossetti">GitHub</a> |
-                            {" "}<a href="mailto:prof.mj.rossetti@gmail.com">Email</a>
+                            {" "}<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/mikerossetti/">LinkedIn</a> |
+                            {" "}<a target="_blank" rel="noopener noreferrer" href="https://github.com/prof-rossetti">GitHub</a> |
+                            {" "}<a target="_blank" rel="noopener noreferrer" href="mailto:prof.mj.rossetti@gmail.com">Email</a>
                         </p>
                     </footer>
                 </Container>

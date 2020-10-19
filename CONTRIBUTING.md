@@ -35,6 +35,15 @@ cd prof-rossetti-web-react/
 npm install
 ```
 
+## Configuration
+
+Optionally configure google analytics tracking:
+
+```sh
+# .env file
+REACT_APP_GA_TRACKING_ID="UA-XXXXXX-X"
+```
+
 ## Usage
 
 ```sh

@@ -19,4 +19,7 @@ heroku create -n prof-rossetti
 heroku git:remote -a prof-rossetti
 heroku buildpacks:remove heroku/nodejs -a prof-rossetti
 heroku buildpacks:add mars/create-react-app -a prof-rossetti
+
+heroku config:set REACT_APP_GA_TRACKING_ID="UA-XXXX-X" -a prof-rossetti
+
 ```
