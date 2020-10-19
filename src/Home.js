@@ -31,7 +31,7 @@ export default function Home() {
             </p>
 
             <p>
-                He has worked as
+                Mike has worked as
                 {" "} an analytics director at a silicon valley startup,
                 {" "} a polling data analyst on a winning US Presidential campaign,
                 {" "} and a government technology consultant at Deloitte.
