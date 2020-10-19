@@ -4,14 +4,21 @@ import Container from 'react-bootstrap/Container'
 //import Row from 'react-bootstrap/Row'
 //import Col from 'react-bootstrap/Col'
 //import Card from 'react-bootstrap/Card'
+import Image from 'react-bootstrap/Image'
+
+import profilePhoto from './faculty-headshot-straight.jpg'
 
 export default function Home() {
 
+    const imgStyle = {marginBottom: 15}
+
     return (
-        <Container fluid>
+        <Container>
             <p className="lead">
                 Adjunct Professor in Information Systems
             </p>
+
+            <Image fluid src={profilePhoto} style={imgStyle}></Image>
 
             <p>
                 Michael J Rossetti teaches data science and software development courses
