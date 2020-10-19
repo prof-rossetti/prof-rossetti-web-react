@@ -41,7 +41,7 @@ export default function App() {
         <Router>
             <div className="app">
                 <Navbar fixed="top" bg="light" expand="lg">
-                    <Navbar.Brand href="/">Michael J Rossetti</Navbar.Brand>
+                    <Navbar.Brand href="/">Michael Rossetti</Navbar.Brand>
                     {/*
 
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />

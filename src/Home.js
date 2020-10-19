@@ -21,7 +21,7 @@ export default function Home() {
             <Image fluid src={profilePhoto} style={imgStyle}></Image>
 
             <p>
-                Michael J Rossetti teaches data science and software development courses
+                Michael Rossetti teaches data science and software development courses
                 {" "}at Georgetown University's McDonough School of Business
                 {" "}and New York University's Stern School of Business.
             </p>
@@ -32,8 +32,8 @@ export default function Home() {
 
             <p>
                 Mike has worked as
-                {" "} an analytics director at a silicon valley startup,
-                {" "} a polling data analyst on a winning US Presidential campaign,
+                {" "} a polling data analyst for a winning US Presidential campaign,
+                {" "} an analytics director for a Silicon Valley startup,
                 {" "} and a technology consultant for the US Government.
             </p>
 
