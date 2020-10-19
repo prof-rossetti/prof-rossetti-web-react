@@ -1,5 +1,7 @@
 # Credits, Notes, and References
 
+## Setup
+
 Reproduction from scratch:
 
 ```sh
@@ -12,6 +14,8 @@ npm install d3 --save
 # npm install query-string --save
 ```
 
+## Server Config
+
 Servers from scratch:
 
 ```sh
@@ -19,6 +23,9 @@ heroku create -n prof-rossetti
 heroku git:remote -a prof-rossetti
 heroku buildpacks:remove heroku/nodejs -a prof-rossetti
 heroku buildpacks:add mars/create-react-app -a prof-rossetti
+
+heroku config:set REACT_APP_GA_TRACKING_ID="UA-XXXX-X" -a prof-rossetti
+
 ```
 
 Configuring domains:
@@ -29,8 +36,6 @@ Configuring domains:
   + https://stackoverflow.com/questions/19399477/setting-up-a-custom-domain-with-heroku-and-namecheap/25925332
 
 ```sh
-heroku config:set REACT_APP_GA_TRACKING_ID="UA-XXXX-X" -a prof-rossetti
-
 # these don't work (needs to be www.)...
 # heroku domains:add prof-rossetti.com -a prof-rossetti
 # heroku domains:add prof-rossetti.org -a prof-rossetti
