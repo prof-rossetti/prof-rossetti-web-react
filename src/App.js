@@ -1,33 +1,69 @@
+
 import React from 'react'
-//import Navbar from 'react-bootstrap/Navbar'
-//import Nav from 'react-bootstrap/Nav'
-//import Container from 'react-bootstrap/Container'
-//import Row from 'react-bootstrap/Row'
-//import Col from 'react-bootstrap/Col'
+import { BrowserRouter as Router, Switch, Route, NavLink} from 'react-router-dom'
+//import ReactGA from 'react-ga'
+//import {groupBy, values} from "lodash"
+
+import Navbar from 'react-bootstrap/Navbar'
+import Nav from 'react-bootstrap/Nav'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 //import Card from 'react-bootstrap/Card'
-import Button from 'react-bootstrap/Button'
 
+import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
-//mport profilePhoto from './profile-photo.png'
 
-function clickHandler(event){
-    console.log("YOU CLICKED ME", event.target.value)
-}
+import Home from './Home'
+import Research from './Research'
+import Teaching from './Teaching'
+import Experience from './Experience'
 
-function App() {
+//ReactGA.initialize(process.env.REACT_APP_GA_TRACKER_ID, {debug: true})
+
+export default function App() {
+    //ReactGA.pageview(window.location.href)
+
+    // ROUTES
+
+    //var sitemap = [
+    //    {"key": "research", "title": "Research", "component": Research},
+    //    {"key": "teaching", "title": "Teaching", "component": Teaching},
+    //    {"key": "experience", "title": "Experience", "component": Experience},
+    //]
+
+    //.map(function(route){
+    //    return <Route key={route["key"]} path={`/${route["key"]}`} component={route["component"]} />
+    //})
+
+    // LINKS
+
+
     return (
-        <div>
-            <header>
-                <h1>Hello World</h1>
-            </header>
+        <Router>
+            <div>
+                <Navbar fixed="top" bg="light">
+                    <Navbar.Brand href="/">Michael J Rossetti</Navbar.Brand>
 
-             <p className="lead">There will be a page here.</p>
+                    <Navbar.Toggle aria-controls="navbar-collapse" />
+                    <Navbar.Collapse id="navbar-collapse">
+                        <Nav className="ml-auto">
+                            <Nav.Link href="/research">Research</Nav.Link>
+                            <Nav.Link href="/teaching">Teaching</Nav.Link>
+                            <Nav.Link href="/experience">Experience</Nav.Link>
+                        </Nav>
+                    </Navbar.Collapse>
+                </Navbar>
 
-            <Button onClick={clickHandler} value="research">Research</Button>
-            <Button onClick={clickHandler} value="teaching">Teaching</Button>
-            <Button onClick={clickHandler} value="experience">Experience</Button>
-        </div>
+                <Container fluid className="page">
+                    <Switch>
+                        <Route path="/" exact component={Home} />
+                        <Route path="/research" component={Research} />
+                        <Route path="/teaching" component={Teaching} />
+                        <Route path="/experience" component={Experience} />
+                    </Switch>
+                </Container>
+            </div>
+        </Router>
     )
 }
-
-export default App

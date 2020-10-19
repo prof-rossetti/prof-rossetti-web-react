@@ -11,3 +11,25 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/* MY STYLES */
+
+
+.page {
+  margin-top: 70px;
+}
+
+/*
+@media (min-width: 768px) and (max-width: 768px) {
+  .page {
+    margin-top: 70px !important;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .page {
+    margin-top: 20px;
+  }
+}
+*/
