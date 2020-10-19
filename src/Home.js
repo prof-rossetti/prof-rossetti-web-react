@@ -3,32 +3,37 @@ import React from 'react'
 import Container from 'react-bootstrap/Container'
 //import Row from 'react-bootstrap/Row'
 //import Col from 'react-bootstrap/Col'
-import Card from 'react-bootstrap/Card'
+//import Card from 'react-bootstrap/Card'
 
 export default function Home() {
 
     return (
         <Container fluid>
-            <h2>Home</h2>
+            <p className="lead">
+                Adjunct Professor in Information Systems
+            </p>
 
-            <Card>
-                <Card.Body>
-                    <Card.Title><h3>Card Title</h3></Card.Title>
-                    <Card.Text>
-                        Card text...
-                    </Card.Text>
-                </Card.Body>
-            </Card>
+            <p>
+                Michael J Rossetti teaches data science and software development courses
+                {" "}at Georgetown University's McDonough School of Business
+                {" "}and New York University's Stern School of Business.
+            </p>
 
-            <Card>
-                <Card.Body>
-                    <Card.Title><h3>Card Title</h3></Card.Title>
-                    <Card.Text>
-                        Card text...
-                    </Card.Text>
-                </Card.Body>
-            </Card>
+            <p>
+                His research interests include machine learning, natural language processing, sentiment analysis, and public opinion polling.
+            </p>
 
+            <p>
+                He has worked as
+                {" "} an analytics director at a silicon valley startup,
+                {" "} a polling data analyst on a winning US Presidential campaign,
+                {" "} and a government technology consultant at Deloitte.
+            </p>
+
+            <p>
+                He received both a Master of Science in Information Systems and a Bachelor in Business Administration
+                {" "}from the George Washington University.
+            </p>
         </Container>
     )
 }
