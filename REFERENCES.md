@@ -44,3 +44,7 @@ heroku domains:add www.prof-rossetti.org -a prof-rossetti
 ```
 
 Then edit the CNAME records on the DNS to match the respective *.herokudns.com address.
+
+JK JK set up domain forwarding with masking.
+
+  +  https://www.namecheap.com/support/knowledgebase/article.aspx/385/2237/how-to-redirect-a-url-for-a-domain
